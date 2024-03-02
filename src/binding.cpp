@@ -235,7 +235,7 @@ void PerformCall(sass_context_wrapper* ctx_w, Nan::Callback* callback, int argc,
   }
 }
 
-void MakeCallback(uv_work_t* req) {
+void MakeCallback(uv_work_t* req, int _) {
   Nan::HandleScope scope;
 
   Nan::TryCatch try_catch;
